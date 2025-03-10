@@ -76,6 +76,7 @@ https://docs.google.com/presentation/d/1VBIz16R1ChZ7JbKqK3LX2DqdHZke2gB-NtwSECcS
 
 https://github.com/ITEC-BCN/m3-a51-mario-kart-binari-maury-l1/blob/main/src/controllers/CharacteMarioKartController.kt
 
+:Serializable despues de cada clase para que se pueda exportar e importar
 Se crea la carpeta al mismo nivel del src
 
 ## Crear carpeta: 
@@ -110,6 +111,48 @@ Se crea la carpeta al mismo nivel del src
         }
         println("Lista de personajes exportada correctamente.")
     }
+
+# Colas
+
+## Queue 
+    fun main() {
+        val queue: Queue<String> = LinkedList()
+    
+        // Añadir elementos
+        queue.add("Primero")
+        queue.add("Segundo")
+        queue.add("Tercero")
+    
+        // Eliminar el primer elemento
+        println(queue.poll()) // Salida: Primero
+    
+        // Ver el siguiente elemento sin eliminarlo
+        println(queue.peek()) // Salida: Segundo
+    }
+
+## Stack
+
+    fun main() {
+        val stack = Stack<String>()
+    
+        // Añadir elementos
+        stack.push("Primero")
+        stack.push("Segundo")
+        stack.push("Tercero")
+    
+        // Eliminar el elemento superior
+        println(stack.pop()) // Salida: Tercero
+    
+        // Ver el siguiente elemento sin eliminarlo
+        println(stack.peek()) // Salida: Segundo
+    }
+
+## PriorityQueue  
+
+
+
+https://github.com/ITEC-BCN/m3-a55-col-leccions-maury-l1/blob/master/src/main/kotlin/models/Pacient.kt
+- :Comparable se pone despues de cada clase que quieras comparar para PriorityQueue, se debe hacer override del compareTo()
 
 # Interficies Graficas
 
